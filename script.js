@@ -1,11 +1,16 @@
+let hours = document.querySelector('.hours');
+let minutes = document.querySelector('.minutes');
+let seconds = document.querySelector('.seconds');
+
 setInterval(() => {
-    var [hr,min,sec] = [0,0,0];
-    var data = new Date();
-    sec = data.getSeconds() * 6;
-    min = data.getMinutes() * 6;
-    hr = data.getHours() * 30 + Math.round(min / 12);
-    document.querySelector('.hour').style.transform = 'rotate(' + hr + 'deg)';
-    document.querySelector('.sec').style.transform = 'rotate(' + sec + 'deg)';
-    document.querySelector('.min').style.transform = 'rotate(' + min + 'deg)';
-    console.log(data);
+    let [hrs, mins, secs] = [0, 0, 0];
+    let currentTime = new Date();
+
+    secs = currentTime.getSeconds() * 6;
+    mins = currentTime.getMinutes() * 6;
+    hrs = (currentTime.getHours() * 30) + Math.round(mins / 12);
+
+    hours.style.transform = "rotate(" + hrs + "deg)";
+    minutes.style.transform = "rotate(" + mins + "deg)";
+    seconds.style.transform = "rotate(" + secs + "deg)";
 }, 1000);
