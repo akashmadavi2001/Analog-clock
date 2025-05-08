@@ -1,6 +1,6 @@
-let hours = document.querySelector('.hours');
-let minutes = document.querySelector('.minutes');
-let seconds = document.querySelector('.seconds');
+const hours = document.querySelector('.hours');
+const minutes = document.querySelector('.minutes');
+const seconds = document.querySelector('.seconds');
 
 setInterval(() => {
     let [hrs, mins, secs] = [0, 0, 0];
