@@ -13,8 +13,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: animation 10s linear infinite;
 }
 
+/* Analog clock */
 .container {
     width: 400px;
     height: 400px;
@@ -23,7 +25,6 @@ body {
     position: relative;
     box-shadow: 0 0 10px aqua;
     border: 1px solid white;
-    animation: animation 10s linear infinite;
 }
 
 @keyframes animation {
@@ -71,4 +72,29 @@ section h6 {
     height: 100%;
     padding: 10px;
     transform: rotate(calc(30deg * var(--i)));
+}
+
+/* Digital clock */
+.digital {
+    display: flex;
+    gap: 5px;
+    color: aqua;
+    position: absolute;
+    left: 35%;
+    bottom: -15%;
+}
+
+.no {
+    font-weight: 600;
+    color: aqua;
+    letter-spacing: 2px;
+}
+
+/* AM PM  */
+.am {
+    position: absolute;
+    bottom: -15%;
+    left: 60%;
+    color: aqua;
+    font-weight: 600;
 }
