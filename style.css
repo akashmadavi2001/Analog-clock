@@ -16,6 +16,12 @@ body {
     animation: animation 10s linear infinite;
 }
 
+@keyframes animation {
+    100% {
+        filter: hue-rotate(360deg);
+     }
+}
+
 /* Analog clock */
 .container {
     width: 400px;
@@ -25,12 +31,6 @@ body {
     position: relative;
     box-shadow: 0 0 10px aqua;
     border: 1px solid white;
-}
-
-@keyframes animation {
-    100% {
-        filter: hue-rotate(360deg);
-    }
 }
 
 .clock {
