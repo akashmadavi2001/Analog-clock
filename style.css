@@ -7,7 +7,6 @@
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     background-color: #333;
     display: flex;
@@ -98,3 +97,4 @@ section h6 {
     color: aqua;
     font-weight: 600;
 }
+
