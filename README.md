@@ -1,2 +1,2 @@
 # Analog-clock
-![Image](https://github.com/user-attachments/assets/356e6f01-2180-495f-a346-9b96bad5f9e7)
+<img width="761" height="761" alt="Image" src="https://github.com/user-attachments/assets/458376ea-848a-4970-89b0-aface885f119" />
