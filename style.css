@@ -7,18 +7,13 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: animation 10s linear infinite;
-}
-
-@keyframes animation {
-    100% {
-        filter: hue-rotate(360deg);
-     }
 }
 
 /* Analog clock */
@@ -30,6 +25,12 @@ body {
     position: relative;
     box-shadow: 0 0 10px aqua;
     border: 1px solid white;
+}
+
+@keyframes animation {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .clock {
@@ -73,6 +74,23 @@ section h6 {
     transform: rotate(calc(30deg * var(--i)));
 }
 
+section h6 .num {
+    color: aqua;
+    font-size: 16px;
+}
+
+section h6:nth-child(3) .num {
+    transform: rotate(270deg);
+}
+
+section h6:nth-child(6) .num {
+    transform: rotate(180deg);
+}
+
+section h6:nth-child(9) .num {
+    transform: rotate(90deg);
+}
+
 /* Digital clock */
 .digital {
     display: flex;
@@ -97,4 +115,3 @@ section h6 {
     color: aqua;
     font-weight: 600;
 }
-
